@@ -1,0 +1,33 @@
+@font-face {
+	font-family: 'PTSansRegular';
+	src: url("./assets/fonts/PTSans-Regular.ttf");
+}
+
+html,
+body,
+body * {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'PTSansRegular';
+	outline: none;
+}
+
+/*Иконки*/
+
+.icon {
+	background: url("./assets/img/sprite.png") 0 0 no-repeat;
+	width: 18px;
+	height: 18px;
+}
+
+.icon-add {
+	background-position: 0 0;
+}
+
+.icon-remove {
+	background-position: 0 -38px;
+
+}
+
+/*Иконки (конец)*/
