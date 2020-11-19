@@ -1,29 +1,22 @@
 # vue-search-form
 
-## Project setup
+## Настройка и запуск проекта на дев сервере
 ```
 npm install
 ```
 
-### Compiles and hot-reloads for development
-```
 npm run serve
 ```
 
-### Compiles and minifies for production
+### Production сборка
 ```
 npm run build
 ```
 
-### Run your tests
-```
-npm run test
-```
+### Минусы моего решения
+1. Нет валидации диапазона цены и метража
+2. Нельзя сбросить значения в select'ах
+3. Не реализована задержка (debounce) при вводе значений в input'ах
 
-### Lints and fixes files
-```
-npm run lint
-```
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+Буду весьма признателен за обратную связь!

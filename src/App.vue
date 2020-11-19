@@ -1,28 +1,40 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
-  </div>
+	<div id="app">
+		<div class="search-form-container">
+			<search-form></search-form>
+		</div>
+	</div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+	import SearchForm from './components/Form.vue';
 
-export default {
-  name: 'App',
-  components: {
-    HelloWorld
-  }
-}
+	export default {
+		name: 'App',
+		components: {
+			SearchForm
+		}
+	};
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+	@import "./main.css";
+
+	#app {
+		background: #E0EAFC;
+		background: linear-gradient(to bottom, #CFDEF3, #E0EAFC);
+		width: 100%;
+		height: 100vh;
+	}
+
+	.search-form-container {
+		width: 100%;
+		max-width: 940px;
+		margin: 0 auto;
+		padding: 50px 0 0;
+	}
+
+	.additional-fields__field {
+		background: #e6f2fe;
+	}
 </style>
