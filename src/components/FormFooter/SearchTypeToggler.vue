@@ -68,6 +68,12 @@
 		align-items: center;
 	}
 
+	@media all and (max-width: 425px) {
+		.search-type-toggler {
+			flex-direction: column;
+		}
+	}
+
 	.search-type-toggler__toggler {
 		width: 40px;
 		height: 22px;
@@ -76,6 +82,12 @@
 		background: #5e9969;
 		border-radius: 11px;
 		cursor: pointer;
+	}
+
+	@media all and (max-width: 425px) {
+		.search-type-toggler__toggler {
+			margin: 10px 0;
+		}
 	}
 
 	.search-type-toggler__checkbox {
@@ -95,6 +107,12 @@
 		color: #506981;
 		border-bottom: 1px dotted;
 		cursor: pointer;
+	}
+
+	@media all and (max-width: 425px) {
+		.search-type-toggler__button {
+			font-size: 18px;
+		}
 	}
 
 	.search-type-toggler__button--is-active {

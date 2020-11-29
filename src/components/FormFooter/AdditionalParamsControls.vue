@@ -30,4 +30,10 @@
 	.additional-params-controls {
 		display: flex;
 	}
+
+	@media all and (max-width: 600px) {
+		.additional-params-controls {
+			margin-top: 25px;
+		}
+	}
 </style>

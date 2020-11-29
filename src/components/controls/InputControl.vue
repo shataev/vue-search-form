@@ -25,7 +25,6 @@
 					return this.$store.state.formModel[ this.fieldNameInModel ];
 				},
 				set ( value ) {
-					debugger;
 					this.$store.commit( 'updateFormModelField', { fieldName: this.fieldNameInModel, value } );
 				}
 			}
@@ -36,6 +35,7 @@
 <style scoped>
 	.input-control {
 		width: 100%;
+		height: 44px;
 		border: none;
 		font-size: 18px;
 		padding: 0 20px;

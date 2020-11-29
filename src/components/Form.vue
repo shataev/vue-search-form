@@ -79,6 +79,12 @@
 </script>
 
 <style scoped>
+	.search-form {
+		width: 100%;
+		max-width: 940px;
+		margin: 0 auto;
+	}
+
 	.search-form__content {
 		padding: 36px 20px;
 		background: linear-gradient( to right, #82b3e5, #a8d5e9);
@@ -93,6 +99,14 @@
 		background: #e6f2fe;
 	}
 
+	@media all and (max-width: 600px) {
+		.search-form__footer {
+			height: auto;
+			flex-direction: column;
+			align-items: center;
+		}
+	}
+
 
 	.search-form__main-fields {
 		width: 100%;
@@ -103,21 +117,46 @@
 		overflow: hidden;
 	}
 
+	@media all and (max-width: 768px) {
+		.search-form__main-fields {
+			flex-direction: column;
+		}
+	}
+
 	.search-form__controls {
 		display: flex;
 		flex: 1 1 auto;
 		flex-wrap: nowrap;
 	}
 
+	@media all and (max-width: 600px) {
+		.search-form__controls {
+			flex-direction: column;
+		}
+	}
+
 	.search-form__select {
-		flex: 1 1 33.33%;
+		flex: 1 1 auto;
+		width: 33%;
 		margin-right: 1px;
+	}
+
+	@media all and (max-width: 600px) {
+		.search-form__select {
+			width: 100%;
+			margin: 0 0 1px 0;
+		}
+
+		.search-form__select:last-child {
+			margin-bottom: 0;
+		}
 	}
 
 	.search-form__select:last-child {
 		margin-right: 0;
 	}
 
+	/* Дополнительные поля формы (цена, метраж) */
 	.search-form__additional-fields {
 		width: 100%;
 		display: flex;
@@ -132,5 +171,20 @@
 
 	.size-range-box {
 		flex: 1 1 40%;
+	}
+
+	@media all and (max-width: 600px) {
+		.search-form__additional-fields {
+			flex-direction: column;
+		}
+
+		.price-range-box {
+			width: 100%;
+			margin: 0 0 20px  0;
+		}
+
+		.size-range-box {
+			width: 100%;
+		}
 	}
 </style>

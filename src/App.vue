@@ -21,17 +21,19 @@
 	@import "./main.css";
 
 	#app {
+		display: flex;
+		width: 100%;
+		min-width: 320px;
+		height: 100%;
+		min-height: 100vh;
 		background: #E0EAFC;
 		background: linear-gradient(to bottom, #CFDEF3, #E0EAFC);
-		width: 100%;
-		height: 100vh;
 	}
 
 	.search-form-container {
 		width: 100%;
-		max-width: 940px;
 		margin: 0 auto;
-		padding: 50px 0 0;
+		padding: 20px;
 	}
 
 	.additional-fields__field {

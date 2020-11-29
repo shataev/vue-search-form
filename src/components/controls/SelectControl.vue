@@ -34,7 +34,8 @@
 <style scoped>
 	.select-control {
 		position: relative;
-		padding: 0 20px;
+		height: 44px;
+		padding: 0 30px 0 20px;
 		font-size: 18px;
 		color: #333333;
 		border: none;
@@ -45,5 +46,9 @@
 		background-size: 6px 6px, 6px 6px;
 		background-repeat: no-repeat;
 		cursor: pointer;
+	}
+
+	@media all and (max-width: 768px) {
+
 	}
 </style>

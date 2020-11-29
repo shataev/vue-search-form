@@ -54,6 +54,13 @@
 		cursor: pointer;
 	}
 
+	@media all and (max-width: 425px) {
+		.additional-param-button {
+			font-size: 18px;
+			margin-right: 40px;
+		}
+	}
+
 	.additional-param-button:last-child {
 		margin: 0;
 	}
@@ -65,6 +72,4 @@
 	.additional-param-button__icon {
 		margin: 0 10px 0 0;
 	}
-
-
 </style>
